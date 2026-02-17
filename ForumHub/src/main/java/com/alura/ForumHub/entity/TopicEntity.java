@@ -34,13 +34,13 @@ public class TopicEntity {
 
     @ManyToOne
     @JoinColumn(name = "autor_id", nullable = false)
-    private UserEntity nomeUser;
+    private UserEntity user;
 
     public TopicEntity(String titulo, String mensagem, UserEntity user) {
         this.titulo = titulo;
         this.mensagem = mensagem;
         this.status = EstadoDoTopico.ABERTO;
         this.dataCriacao = LocalDateTime.now();
-        this.nomeUser = user;
+        this.user = user;
     }
 }
