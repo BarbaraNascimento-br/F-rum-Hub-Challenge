@@ -24,4 +24,10 @@ public class UserEntity {
     @Column(name = "curso", nullable = false)
     private String curso;
 
+    @Column(name = "email", nullable = false)
+    private String email;
+
+    @Column(name = "senha", nullable = false)
+    private String senha;
+
 }

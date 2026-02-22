@@ -3,6 +3,8 @@ package com.alura.ForumHub.dto;
 public record UserReponseDTO(
         Long id,
         String nomeUser,
-        String curso
+        String curso,
+        String email,
+        String senha
 ) {
 }
