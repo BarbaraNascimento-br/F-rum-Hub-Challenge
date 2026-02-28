@@ -1,0 +1,190 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_a6137f4e36cd4d0fbf80f2d3a4eb4923
+  created: 1772155672400
+  modified: 1772155672400
+  description: ""
+collection:
+  - url: http://localhost:8080/forumhub/listar
+    name: Listar Tópicos
+    meta:
+      id: req_63f7758a93264646a601d71faf89b951
+      created: 1772155672417
+      modified: 1772244679280
+      isPrivate: false
+      description: ""
+      sortKey: -1772155672417
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/forumhub/user/create
+    name: "Criar Usuário "
+    meta:
+      id: req_88b6dcc0bd7b4aaeaff112432ca07663
+      created: 1772157488078
+      modified: 1772205871263
+      isPrivate: false
+      description: ""
+      sortKey: -1772157488078
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome" : "Mikael Nunes",
+        	"curso" : "Contabilidade",
+        	"email" : "Mikaelteste@gmail.com",
+        	"senha" : "12234556"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/forumhub/topic/create
+    name: Criar Tópico
+    meta:
+      id: req_8eeea137c2e4484fba0651355b81a622
+      created: 1772205973308
+      modified: 1772206625270
+      isPrivate: false
+      description: ""
+      sortKey: -1772205973308
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"titulo" : "Error 500",
+        	"mensagem" : "Meu teste no insomnia fica dando erro 500",
+        	"userId" : 1
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/forumhub/listar/1
+    name: Listar Tópicos por usuários(id)
+    meta:
+      id: req_cce1a0a14d3e439391086c407e37f537
+      created: 1772244865121
+      modified: 1772244932471
+      isPrivate: false
+      description: ""
+      sortKey: -1772244865121
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/forumhub/update/1
+    name: Atualizar Tópico
+    meta:
+      id: req_0fb15109145640e393d681fd079d4436
+      created: 1772245010142
+      modified: 1772246033870
+      isPrivate: false
+      description: ""
+      sortKey: -1772245010142
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"titulo" : "error 400",
+        	"mensagem" : "agora tá dando erro 400"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/forumhub/delete/2
+    name: Deletar Tópico
+    meta:
+      id: req_9298304e51c84808b189ec6ff679db30
+      created: 1772246150346
+      modified: 1772246417757
+      isPrivate: false
+      description: ""
+      sortKey: -1772246150346
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e03be565dd113ff12c1ab077a63f206c9be66422
+    created: 1772155672406
+    modified: 1772155672406
+environments:
+  name: Base Environment
+  meta:
+    id: env_e03be565dd113ff12c1ab077a63f206c9be66422
+    created: 1772155672403
+    modified: 1772155672403
+    isPrivate: false
