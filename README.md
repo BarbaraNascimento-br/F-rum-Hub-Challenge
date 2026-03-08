@@ -27,8 +27,8 @@ Este projeto foi desenvolvido para praticar construção de APIs REST, autentica
 
 Teste da API no Insomnia
 
-<img src="images/teste-api-insomnia.png" width="800">
-![Teste da API no Insomnia](https://github.com/user-attachments/assets/706d34a8-1264-4469-a59e-b5604b0f78be)
+<img src="imgs\image.png" width="800">
+
 
 
 ---
