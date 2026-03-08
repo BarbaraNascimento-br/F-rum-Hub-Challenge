@@ -23,16 +23,6 @@ Este projeto foi desenvolvido para praticar construção de APIs REST, autentica
 
 ---
 
-📸 Demonstração da API
-
-Teste da API no Insomnia
-
-<img src="imgs\image.png" width="800">
-
-
-
----
-
 🏗️ Arquitetura do Projeto
 
 A aplicação segue uma arquitetura em camadas:
