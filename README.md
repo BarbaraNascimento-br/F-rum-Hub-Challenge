@@ -16,6 +16,7 @@ O sistema permite:
 - Listar tópicos
 - Atualizar tópicos
 - Excluir tópicos
+- Criar usuários 
 - Autenticação com JWT
 - Proteção de rotas com Spring Security
 
